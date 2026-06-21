@@ -15,6 +15,22 @@ It leverages the Gemini models (specifically `gemini-3.1-flash-lite`) to dynamic
 - **Frontend:** Vanilla HTML/CSS/JS with Server-Sent Event (SSE) buffer chunk parsing.
 - **Security:** Secret isolation using `.env` files and `python-dotenv`, session isolation via ADK context memory.
 
+## Project Structure
+```text
+AI-Budget-Planner-Expense-Analyst/
+├── app/                  # ADK Backend
+│   ├── agent.py          # Core AI agent & tools logic
+│   └── fast_api_app.py   # FastAPI server and streaming endpoints
+├── static/               # Frontend UI
+│   ├── index.html        # Main interface & settings modal
+│   ├── styles.css        # Glassmorphism styling
+│   └── app.js            # Client-side logic & SSE parsing
+├── tests/                # Test suite
+├── .env                  # Environment variables
+├── pyproject.toml        # Python project configuration
+└── README.md             # Project documentation
+```
+
 ## Setup Instructions
 
 1. Ensure you have Python 3.10+ installed. This project uses `uv` for dependency management.
