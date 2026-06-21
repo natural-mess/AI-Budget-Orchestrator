@@ -1,10 +1,14 @@
 # AI Budget Orchestrator
 
+![AI Budget Orchestrator Banner](assets/hero_banner.png)
+
 This project is an advanced, AI-powered financial planning tool built with the **Google Agent Development Kit (ADK)**. 
 
 It leverages the Gemini models (specifically `gemini-3.1-flash-lite`) to dynamically evaluate a user's financial goals, calculate precise budgets, and actively request approval for strategic adjustments using ADK's Human-in-the-Loop workflows via LongRunningFunctionTools.
 
 ## Features
+
+![Chat UI Mockup](assets/ui_mockup.png)
 - **ADK Agent Architecture:** Utilizes ADK `Runner` and `SessionService` for fully stateful, context-aware interactions.
 - **Glassmorphism UI:** A stunning, premium frontend interface that communicates with the API via Server-Sent Events (SSE).
 - **Custom API Key Support:** Includes a UI modal allowing users to input their own Gemini API Key directly, allowing secure and independent evaluations.
